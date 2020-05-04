@@ -1,0 +1,4 @@
+Install python 2.7
+Install pyspark using pip install pyspark.
+download latest version of hadoop and set the HADOOP_HOME in the env variable.
+
