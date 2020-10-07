@@ -42,3 +42,29 @@ Loading data to table default.table2
 OK
 Time taken: 6.52 seconds
 
+--------------------------
+
+join 2 tables:
+
+hive> select * from table1 a join table2 b on a.name = b.name ;
+
+
+hive> select * from table1 a join table2 b on a.name = b.name ;
+Query ID = hadoop_20201007164600_***
+Total jobs = 1
+Launching Job 1 out of 1
+Status: Running (Executing on YARN cluster with App id application_1601575220654_0314)
+
+----------------------------------------------------------------------------------------------
+        VERTICES      MODE        STATUS  TOTAL  COMPLETED  RUNNING  PENDING  FAILED  KILLED
+----------------------------------------------------------------------------------------------
+Map 1 .......... container     SUCCEEDED      1          1        0        0       0       0
+Map 2 .......... container     SUCCEEDED      1          1        0        0       0       0
+----------------------------------------------------------------------------------------------
+VERTICES: 02/02  [==========================>>] 100%  ELAPSED TIME: 4.55 s
+----------------------------------------------------------------------------------------------
+OK
+shamim1 shamim1
+shamim1 shamim1
+
+
